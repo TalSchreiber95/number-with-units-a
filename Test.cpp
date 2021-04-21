@@ -82,6 +82,6 @@ TEST_CASE("Operators: >, >=, <, <=, ==, != "){
 TEST_CASE("Throw exception check"){
     NumberWithUnits::read_units(units_file);
     NumberWithUnits n1{2, "km"};
-    NumberWithUnits n2{2500, "cm"};
+    NumberWithUnits n2{2500, "sec"};
     CHECK_THROWS(  n1+n2);
 }
